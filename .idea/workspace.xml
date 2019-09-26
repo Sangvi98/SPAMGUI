@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="376b9c09-7200-4f80-a2b2-f528e32bce7f" name="Default Changelist" comment="updating questions files">
+      <change afterPath="$PROJECT_DIR$/src/Trial.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Trial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SPAM/META-INF/SPAM.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SPAM/QuestionsFile.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SPAM/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SPAM/production/SPAM/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPAM.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../SPAM\exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>space</find>
+      <find>basenu</find>
+      <find>startnew</find>
+      <find>read</find>
+      <find>primaryStage</find>
+      <find>spacer</find>
+      <find>generateread</find>
+      <find>readytime</find>
+      <find>Ready?</find>
+      <find>scene2.set</find>
+      <find>readybut</find>
+      <find>readybutton</find>
+      <find>currentQuestion</find>
+      <find>generateRead</find>
+      <find>poll</find>
+      <find>timer</find>
+      <find>new Main()</find>
+      <find>play</find>
+      <find>resets</find>
+      <find>resetcount</find>
+      <find>setonke</find>
+      <find>submit</find>
+      <find>submitButton</find>
+      <find>gra</find>
+      <find>keyp</find>
+      <find>keypress</find>
+      <find>createtrans</find>
+      <find>reset</find>
+      <find>reset.set</find>
+      <find>reset.setonaction</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1PwCqleF9jovINrfm516kkhRkiq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561238168152" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/opencsv-4.6.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sangh\floobits\share\Sangvi98\SPAM\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Trial">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="SPAM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tetris.Main" />
+      <module name="SPAM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tetris.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SPAM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SPAM" />
+      <module name="SPAM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SPAMupdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SPAMupdate" />
+      <module name="SPAM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Trial" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Trial" />
+      <module name="SPAM" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Trial" />
+        <item itemvalue="Application.SPAMupdate" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SPAM" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="376b9c09-7200-4f80-a2b2-f528e32bce7f" name="Default Changelist" comment="" />
+      <created>1551328272336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551328272336</updated>
+      <workItem from="1551328277209" duration="7028000" />
+      <workItem from="1551387558999" duration="503000" />
+      <workItem from="1551585059577" duration="200000" />
+      <workItem from="1551587981347" duration="1937000" />
+      <workItem from="1552274017886" duration="633000" />
+      <workItem from="1555276826736" duration="1396000" />
+      <workItem from="1555279303583" duration="1699000" />
+      <workItem from="1555281024555" duration="2939000" />
+      <workItem from="1555345913919" duration="1028000" />
+      <workItem from="1557534755679" duration="1501000" />
+      <workItem from="1557612727279" duration="760000" />
+      <workItem from="1557613855718" duration="414000" />
+      <workItem from="1557680803869" duration="1524000" />
+      <workItem from="1557869344712" duration="17535000" />
+      <workItem from="1558095003947" duration="13364000" />
+      <workItem from="1558282435645" duration="1046000" />
+      <workItem from="1558351092847" duration="5138000" />
+      <workItem from="1558439826124" duration="6561000" />
+      <workItem from="1558630343001" duration="5455000" />
+      <workItem from="1558874595127" duration="4408000" />
+      <workItem from="1558883074620" duration="4996000" />
+      <workItem from="1558980973374" duration="1862000" />
+      <workItem from="1559047580390" duration="13567000" />
+      <workItem from="1559149117487" duration="1230000" />
+      <workItem from="1559223312572" duration="1020000" />
+      <workItem from="1559387602328" duration="4468000" />
+      <workItem from="1559477872881" duration="9818000" />
+      <workItem from="1559574027668" duration="597000" />
+      <workItem from="1559772296663" duration="1536000" />
+      <workItem from="1560455885913" duration="1128000" />
+      <workItem from="1560710549563" duration="212000" />
+      <workItem from="1560711510462" duration="1620000" />
+      <workItem from="1561046030786" duration="6781000" />
+      <workItem from="1561128778202" duration="3009000" />
+      <workItem from="1561163739786" duration="1756000" />
+      <workItem from="1561218677270" duration="352000" />
+      <workItem from="1561222941836" duration="8353000" />
+      <workItem from="1561384168413" duration="4356000" />
+      <workItem from="1561467004270" duration="1749000" />
+      <workItem from="1567014602621" duration="81000" />
+      <workItem from="1567014708586" duration="668000" />
+      <workItem from="1567015412139" duration="383000" />
+      <workItem from="1567015830958" duration="585000" />
+      <workItem from="1567102458504" duration="1688000" />
+      <workItem from="1568563561475" duration="1726000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="updating questions files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating questions files" />
+  </component>
+</project>

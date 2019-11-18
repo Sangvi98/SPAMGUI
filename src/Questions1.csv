@@ -1,6 +1,6 @@
-﻿This is question1,option 1,option 2,option 3,option 4,1
-question 2,option 1,option 2,option 3,option 4 ,1
-question 3,option 1,option 2,option 3,option 4 ,1
-question 4,option 1,option 2,option 3,option 4 ,1
-question 5,option 1,option 2,option 3,option 4 ,3
-question 6,option 1,option 2,option 3,option 4 ,1
+﻿What highway was on the sign you just passed?,75,471,285,10,4
+How many cars are currently on the shoulder?,0,4,2,3,2
+"Approximately how long will it take to get to XX?",30 minutes,1 minute,20 minutes,8 minutes,3
+Where will the blue car merge,In front of the lead car,In front of me,Behind me,"",1
+What color was the car going in the opposite direction?,Orange,White,Blue,Red,3
+How many cars are currently in your rearview mirror?,5,2,1,3,4

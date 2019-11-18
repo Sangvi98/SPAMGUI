@@ -37,7 +37,7 @@ public class QuestionReader {
     public Question questionGenerator(String line) {
         String delimiter = ",";
         String[] questionLine = line.split(delimiter);
-        System.out.println(questionLine[0] + questionLine[1] + questionLine[2] + questionLine[3]);
+        System.out.println(questionLine[0] + questionLine[1] + questionLine[2] + questionLine[3] + questionLine[4] + questionLine[5]);
         return new Question(questionLine[0], questionLine[1], questionLine[2], questionLine[3], questionLine[4], Integer.parseInt(questionLine[5].trim()));
     }
 

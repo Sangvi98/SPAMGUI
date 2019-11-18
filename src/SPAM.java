@@ -217,6 +217,8 @@ public class SPAM extends Application {
             primaryStage.setFullScreen(true);
                 }
                 );
+
+
         readyButton.setOnAction(e -> {
             timeElapsed = timer.stop();
             sb.append(timeElapsed);

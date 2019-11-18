@@ -332,7 +332,7 @@ public class Main extends Application {
 
         vboxTop = new VBox();
         vboxTop.getStyleClass().add("background");
-        vboxTop.getChildren().addAll(score, subScore, level, subLevel, line, subLine);
+        vboxTop.getChildren().addAll(score,subScore, level, subLevel, line, subLine);
 
         // Bottom left side of the game
         checkGravity = new CheckBox("gravity");
@@ -503,6 +503,7 @@ public class Main extends Application {
                 reset.setOnAction(event -> {
                     resetCount++;
                     startNewGame();
+
                     stage = primaryStage;
                     stage.setScene(scene);
                     stage.setTitle("Tetris");

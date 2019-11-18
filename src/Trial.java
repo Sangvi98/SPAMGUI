@@ -202,7 +202,12 @@ public class Trial extends Application{
             playTimer = new Stopwatch();
 
             //Opening up the Tetris game
-            CurrentMain.start(new Stage());
+            //Application.launch(Main.class);
+            Stage newTetris = new Stage();
+            CurrentMain.start(newTetris);
+            newTetris.show();
+            CurrentMain = null;
+
         });
 
         //displaying the questions after Ready is clicked
@@ -312,18 +317,6 @@ public class Trial extends Application{
 
             //Adding in information of the latest run of tetris and the question that
             //was just answered
-            participantInfo.add(CurrentMain.gameInfo[0]); //tetris score
-            System.out.println(CurrentMain.gameInfo[0]);
-            participantInfo.add(CurrentMain.gameInfo[1]); //tetris time
-            System.out.println(CurrentMain.gameInfo[1]);
-            participantInfo.add(CurrentMain.gameInfo[2]); //tetris resets
-            System.out.println(CurrentMain.gameInfo[2]);
-
-            participantInfo.add(Double.toString(5.0)); //adding the time to click Ready button
-            participantInfo.add(Double.toString(0.0)); //time to submit answer
-            participantInfo.add(Integer.toString(0)); //the answer chosen
-            //since the participant has missed the question this counts as a inaccuracy
-            participantInfo.add("0");
 
             //Setting up a new Tetris game for the next iteration
             //CurrentMain = new Main();
@@ -379,52 +372,6 @@ public class Trial extends Application{
     }
 
 
-    public void generateAverages() {
-        //Total Tetris Time
-        Double totalTetrisTime = 0.0;
-        for (int i = 0; i < 7; i++) {
-            totalTetrisTime += Double.parseDouble(participantInfo.get((i * 8) + 5));
-        }
-        participantInfo.add(Double.toString(totalTetrisTime));
-
-        //Total Tetris Resets
-        Integer totalTetrisResets = 0;
-        for (int i = 0; i < 7; i++) {
-            totalTetrisResets += Integer.parseInt(participantInfo.get((i * 8) + 6));
-        }
-        participantInfo.add(Integer.toString(totalTetrisResets));
-
-        //Total Tetris Score
-        Integer totalTetrisScore = 0;
-        for (int i = 0; i < 7; i++) {
-            totalTetrisScore += Integer.parseInt(participantInfo.get((i * 8) + 4));
-        }
-        participantInfo.add(Integer.toString(totalTetrisScore));
-
-        //Average Ready RT
-        Double averageReadyRT = 0.0;
-        for (int i = 0; i < 6; i++) {
-            averageReadyRT += Double.parseDouble(participantInfo.get((i * 8) + 7));
-        }
-        averageReadyRT = averageReadyRT / 6.0;
-        participantInfo.add(Double.toString(averageReadyRT));
-
-        //Average Question RT
-        Double averageQuestionRT = 0.0;
-        for (int i = 0; i < 6; i++) {
-            averageQuestionRT += Double.parseDouble(participantInfo.get((i * 8) + 8));
-        }
-        averageQuestionRT = averageQuestionRT / 6.0;
-        participantInfo.add(Double.toString(averageQuestionRT));
-
-        //Average Question Accuracy
-        Double averageQuestionAccuracy = 0.0;
-        for (int i = 0; i < 6; i++) {
-            averageQuestionAccuracy += Double.parseDouble(participantInfo.get((i * 8) + 10));
-        }
-        averageQuestionAccuracy = averageQuestionAccuracy / 6.0;
-        participantInfo.add(Double.toString(averageQuestionAccuracy));
-    }
 
 
     public static void main(String[] args) {

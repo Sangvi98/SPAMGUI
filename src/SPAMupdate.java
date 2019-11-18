@@ -1,13 +1,10 @@
 import com.opencsv.CSVWriter;
-import javafx.animation.KeyFrame;
 import javafx.animation.PauseTransition;
-import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.application.Platform;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -49,10 +46,14 @@ public class SPAMupdate extends Application{
 
 
     //arraylist that contains the info to be added to the csv file
-    ArrayList<String> participantInfo = new ArrayList<>();
+//    ArrayList<String> participantInfo = new ArrayList<>();
+    ObservableList<String> participantInfo = FXCollections.observableArrayList();
 
     @Override
     public void start(Stage primaryStage) throws FileNotFoundException {
+        participantInfo.addListener((ListChangeListener<? super String>)  x -> {
+            System.out.println("Participant Info size" + participantInfo.size());
+        });
         this.primaryStage = primaryStage;
 
         //creating the window for the researcher to enter the participant
@@ -158,9 +159,9 @@ public class SPAMupdate extends Application{
             //6 different questions for the SPAM queries
             QuestionReader questionReader;
             if (questions1.isSelected()) {
-                questionReader = new QuestionReader("./out/production/SPAM/Questions1.csv");
+                questionReader = new QuestionReader("C:\\Users\\sangh\\OneDrive\\Documents\\GitHub\\SPAM\\src\\Questions1.csv");
             } else {
-                questionReader = new QuestionReader("./out/production/SPAM/Question2.csv");
+                questionReader = new QuestionReader("C:\\Users\\sangh\\OneDrive\\Documents\\GitHub\\SPAM\\src\\Questions2.csv");
             }
 
             try {
@@ -186,7 +187,9 @@ public class SPAMupdate extends Application{
             //taking in the information for participant number
             //and researcher name
             participantInfo.add(participantNumber.getText());
+            System.out.println(participantInfo.size());
             participantInfo.add(researcherName.getText());
+            System.out.println(participantInfo.size());
 
             //Creating a new Tetris game
             CurrentMain = new Main();
@@ -200,11 +203,15 @@ public class SPAMupdate extends Application{
         playButton.setOnAction(i -> {
             //Recording the time that it took to press the Play button
             participantInfo.add(Double.toString(playTimer.stop()));
+            System.out.println(participantInfo.size());
 
             //Creating a new timer for the Play button
             playTimer = new Stopwatch();
 
             //Opening up the Tetris game
+            CurrentMain = null;
+            CurrentMain = new Main();
+            System.out.println("generating new tetris game");
             CurrentMain.start(new Stage());
         });
 
@@ -260,17 +267,25 @@ public class SPAMupdate extends Application{
             //Adding in information of the latest run of tetris and the question that
             //was just answered
             participantInfo.add(CurrentMain.gameInfo[0]); //tetris score
+            System.out.println(participantInfo.size());
             participantInfo.add(CurrentMain.gameInfo[1]); //tetris time
+            System.out.println(participantInfo.size());
             participantInfo.add(CurrentMain.gameInfo[2]); //tetris resets
+            System.out.println(participantInfo.size());
             participantInfo.add(Double.toString(currentQuestion.readyTime)); //adding the time to click Ready button
+            System.out.println(participantInfo.size());
             participantInfo.add(Double.toString(currentQuestion.submitTime)); //time to submit answer
+            System.out.println(participantInfo.size());
             participantInfo.add(Integer.toString(currentQuestion.answerChosen)); //the answer chosen
+            System.out.println(participantInfo.size());
 
             //this is what will be added to the csv file if the option chosen is correct or not
             if (currentQuestion.answerChosen == currentQuestion.correctOption) {
                 participantInfo.add("1"); // 1 means that the correct answer was chosen
+                System.out.println(participantInfo.size());
             } else {
                 participantInfo.add("0"); // 0 means that the wrong answer was chosen
+                System.out.println(participantInfo.size());
             }
 
             //Setting up a new Tetris game for the next iteration
@@ -284,6 +299,7 @@ public class SPAMupdate extends Application{
 
         continueButton.setOnAction(event -> {
             participantInfo.add("0.0"); //adding a time of 0 to playRT
+            System.out.println(participantInfo.size());
             if (questions.peek() == null) {
                 generateCloseAppScreen();
             } else {
@@ -298,8 +314,11 @@ public class SPAMupdate extends Application{
         closeAppButton.setOnAction(e -> {
             //Adding in information of the last run of tetris
             participantInfo.add(CurrentMain.gameInfo[0]); //tetris score
+            System.out.println(participantInfo.size());
             participantInfo.add(CurrentMain.gameInfo[1]); //tetris time
+            System.out.println(participantInfo.size());
             participantInfo.add(CurrentMain.gameInfo[2]); //tetris resets
+            System.out.println(participantInfo.size());
 
             //setting up the writing process to the file
             try {
@@ -307,7 +326,7 @@ public class SPAMupdate extends Application{
                 generateAverages();
 
                 //writing to the csv file
-                writer = new FileWriter("C:\\Users\\sangh\\floobits\\share\\Sangvi98\\SPAM\\src\\test.csv", true);
+                writer = new FileWriter("C:\\Users\\sangh\\OneDrive\\Documents\\GitHub\\SPAM\\src\\test.csvq", true);
                 CSVWriter csvWriter = new CSVWriter(writer);
                 System.out.println(Arrays.toString(participantInfo.toArray()));
                 Object[] infoObjArr = participantInfo.toArray();
@@ -323,7 +342,7 @@ public class SPAMupdate extends Application{
         primaryStage.show();
     }
 
-    public ArrayList<String> getUserInfo() {
+    public List<String> getUserInfo() {
         return participantInfo;
     }
 
@@ -350,6 +369,7 @@ public class SPAMupdate extends Application{
 
         wait = new PauseTransition(Duration.seconds(5));
         wait.setOnFinished((e) -> {
+            System.out.println("pause transition");
             generateTetrisPlay();
 
             wait.stop();
@@ -366,28 +386,38 @@ public class SPAMupdate extends Application{
             //Adding in information of the latest run of tetris and the question that
             //was just answered
             participantInfo.add(CurrentMain.gameInfo[0]); //tetris score
+            System.out.println(participantInfo.size());
             System.out.println(CurrentMain.gameInfo[0]);
             participantInfo.add(CurrentMain.gameInfo[1]); //tetris time
+            System.out.println(participantInfo.size());
             System.out.println(CurrentMain.gameInfo[1]);
             participantInfo.add(CurrentMain.gameInfo[2]); //tetris resets
+            System.out.println(participantInfo.size());
             System.out.println(CurrentMain.gameInfo[2]);
 
             participantInfo.add(Double.toString(5.0)); //adding the time to click Ready button
+            System.out.println(participantInfo.size());
             participantInfo.add(Double.toString(0.0)); //time to submit answer
+            System.out.println(participantInfo.size());
             participantInfo.add(Integer.toString(0)); //the answer chosen
+            System.out.println(participantInfo.size());
             //since the participant has missed the question this counts as a inaccuracy
             participantInfo.add("0");
+            System.out.println(participantInfo.size());
 
             //Setting up a new Tetris game for the next iteration
             //CurrentMain = new Main();
-            wait = new PauseTransition();
-
-            CurrentMain = new Main();
+            //wait = new PauseTransition();
+            //CurrentMain = null;
+            //CurrentMain = new Main();
         });
-        wait.play();
+        //wait.play();
     }
 
     public void generateTetrisPlay() {
+        CurrentMain = null;
+        System.out.println("generating tetris");
+        CurrentMain = new Main();
         VBox layout2 = new VBox();
         HBox hori2 = new HBox();
         hori2.getChildren().addAll(spacer1, layout2, spacer2);
@@ -395,7 +425,10 @@ public class SPAMupdate extends Application{
         Region spacer4 = new Region();
         VBox.setVgrow(spacer3, Priority.ALWAYS);
         VBox.setVgrow(spacer4, Priority.ALWAYS);
-        layout2.getChildren().addAll(spacer3, playButton, spacer4);
+        Label averageScore = new Label("Average Score Across Participants: 250");
+        averageScore.setFont(Font.font ("Verdana", 24));
+        averageScore.setMinSize(80,80);
+        layout2.getChildren().addAll(spacer3, playButton, averageScore, spacer4);
         playButton.setMinSize(300,250);
         playButton.setFont(Font.font ("Verdana", 30));
         playButton.setText("Play?");
@@ -426,7 +459,7 @@ public class SPAMupdate extends Application{
         Region spacer4 = new Region();
         VBox.setVgrow(spacer3, Priority.ALWAYS);
         VBox.setVgrow(spacer4, Priority.ALWAYS);
-        layout2.getChildren().addAll(spacer3, closeAppButton, spacer4);
+        layout2.getChildren().addAll(closeAppButton, spacer4);
         Scene scene2 = new Scene(hori2, 1600,1600);
         primaryStage.setScene(scene2);
     }

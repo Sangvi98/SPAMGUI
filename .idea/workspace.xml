@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="376b9c09-7200-4f80-a2b2-f528e32bce7f" name="Default Changelist" comment="updating questions files">
-      <change afterPath="$PROJECT_DIR$/src/Trial.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Trial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test.csvq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SPAM/META-INF/SPAM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SPAM/QuestionsFile.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SPAM/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SPAM/production/SPAM/star.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SPAM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPAM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPAM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SPAM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SPAM/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SPAM/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPAMupdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPAMupdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Trial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,43 +29,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>space</find>
-      <find>basenu</find>
-      <find>startnew</find>
-      <find>read</find>
-      <find>primaryStage</find>
-      <find>spacer</find>
-      <find>generateread</find>
-      <find>readytime</find>
-      <find>Ready?</find>
-      <find>scene2.set</find>
-      <find>readybut</find>
-      <find>readybutton</find>
-      <find>currentQuestion</find>
-      <find>generateRead</find>
-      <find>poll</find>
-      <find>timer</find>
-      <find>new Main()</find>
-      <find>play</find>
-      <find>resets</find>
-      <find>resetcount</find>
-      <find>setonke</find>
-      <find>submit</find>
-      <find>submitButton</find>
-      <find>gra</find>
-      <find>keyp</find>
-      <find>keypress</find>
-      <find>createtrans</find>
-      <find>reset</find>
-      <find>reset.set</find>
-      <find>reset.setonaction</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,13 +43,14 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561238168152" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/opencsv-4.6.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -103,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Trial">
+  <component name="RunManager" selected="Application.SPAMupdate">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SPAM" />
@@ -124,15 +90,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SPAM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SPAM" />
+    <configuration name="SPAMupdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SPAMupdate" />
       <module name="SPAM" />
+      <option name="PROGRAM_PARAMETERS" value="-Xms1g -Xmx2g" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SPAMupdate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SPAMupdate" />
+    <configuration name="SPAMv2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SPAMv2" />
       <module name="SPAM" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,13 +112,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.SPAMupdate" />
+      <item itemvalue="Application.SPAMv2" />
+      <item itemvalue="Application.Trial" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Trial" />
         <item itemvalue="Application.SPAMupdate" />
+        <item itemvalue="Application.Trial" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.SPAMv2" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SPAM" />
       </list>
     </recent_temporary>
   </component>
@@ -210,6 +184,21 @@
       <workItem from="1567015830958" duration="585000" />
       <workItem from="1567102458504" duration="1688000" />
       <workItem from="1568563561475" duration="1726000" />
+      <workItem from="1571709620978" duration="4899000" />
+      <workItem from="1571715165201" duration="186000" />
+      <workItem from="1571715379616" duration="209000" />
+      <workItem from="1571715622573" duration="143000" />
+      <workItem from="1571715798489" duration="345000" />
+      <workItem from="1571767373228" duration="656000" />
+      <workItem from="1572010290454" duration="391000" />
+      <workItem from="1572719842986" duration="10580000" />
+      <workItem from="1572980306459" duration="1549000" />
+      <workItem from="1573151066566" duration="5480000" />
+      <workItem from="1573675592052" duration="8099000" />
+      <workItem from="1573773483479" duration="1229000" />
+      <workItem from="1573848845702" duration="615000" />
+      <workItem from="1573959722347" duration="1034000" />
+      <workItem from="1574092737793" duration="423000" />
     </task>
     <servers />
   </component>
